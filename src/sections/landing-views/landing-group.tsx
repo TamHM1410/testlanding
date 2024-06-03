@@ -200,8 +200,8 @@ export default function LandingGroup() {
         </div>
       </div>
 
-      <div className="min-w-screen max-w-screen py-5 flex justify-center 2xl:mx-[10%] mx-[10%]">
-        <div className="py-5  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]">
+      <div className="min-w-screen max-w-screen pb-5 flex justify-center 2xl:mx-[10%] mx-[10%]">
+        <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]">
           <div className=" p-2 grid grid-rows-4 text-white max-lg:p-6 flex items-center">
             <div className="row-span-2 flex flex-col my-10">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">

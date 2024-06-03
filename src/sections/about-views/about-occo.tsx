@@ -20,7 +20,7 @@ export default function AboutOcco() {
               Content.aboutContent.aboutOcco_des.map((item) => {
                 return (
                   <>
-                    <div key={item} className="pt-5 text-customGrey text-sm">
+                    <div key={item} className="pt-5 text-customGrey text-sm 2xl:text-xl">
                       {item}
                     </div>
                   </>
