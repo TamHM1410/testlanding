@@ -44,7 +44,9 @@ export default function NavOption() {
           Trang Chủ
         </Link>
       </div>
+
       <div
+        className=" h-[40px] flex items-center px-2   border-0"
         style={{
           color: active == 1 ? "white" : "",
           backgroundImage:
@@ -57,36 +59,37 @@ export default function NavOption() {
           Về Occo
         </Link>
       </div>
-      <div>
-        {" "}
-        <Link
-          style={{
-            color: active == 3 ? "white" : "",
-            backgroundImage:
-              active == 3
-                ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
-                : "",
-          }}
-          href={ROUTES.PAGE.PRIVACY}
-        >
+
+      <div
+        className=" h-[40px] flex items-center px-2   border-0"
+        style={{
+          color: active == 3 ? "white" : "",
+          backgroundImage:
+            active == 3
+              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              : "",
+        }}
+      >
+        <Link href={ROUTES.PAGE.PRIVACY} className=" w-full ">
           Chính sách bảo mật
         </Link>
       </div>
-      <div className="">
-        {" "}
-        <Link
-          style={{
-            color: active == 4 ? "white" : "",
-            backgroundImage:
-              active == 4
-                ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
-                : "",
-          }}
-          href={ROUTES.PAGE.RULES}
-        >
+
+      <div
+        className=" h-[40px] flex items-center px-2   border-0"
+        style={{
+          color: active == 4 ? "white" : "",
+          backgroundImage:
+            active == 4
+              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              : "",
+        }}
+      >
+        <Link href={ROUTES.PAGE.RULES} className=" w-full ">
           Điều Khoản & Quyền riêng tư
         </Link>
       </div>
+
       <div>
         <span className="flex items-center border w-[100px] h-[36px] justify-center text-xs	rounded-3xl text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text border border-purple-700  border-2 text-white">
           <Link

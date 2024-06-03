@@ -25,11 +25,11 @@ export default function LandingFooter() {
           >
             {Content.HomeContent.contact_des}
           </div>
-          <div className="  flex gap-5 py-3 max-sm:justify-between">
-            <div className=" bg-customBlack border-b border-b-customGrey flex items-center">
+          <div className="  flex gap-5 py-3  max-sm:pt-5 justify-between">
+            <div className=" bg-customBlack border-b border-b-customGrey flex items-center  ">
               <input
                 placeholder="Email của bạn"
-                className="border-0 bg-customBlack max-sm:w-[300px] focus:outline-none "
+                className="border-0 bg-customBlack max-sm:w-[280px] focus:outline-none "
               />
             </div>
 
@@ -38,7 +38,7 @@ export default function LandingFooter() {
               height={34}
               width={34}
               alt=""
-              className="relative left-[3%]"
+              className=""
             />
           </div>
         </div>
