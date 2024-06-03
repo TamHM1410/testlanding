@@ -12,7 +12,7 @@ export default function NavHov() {
     setOpenSlide(0);
   };
 
-  const handleChoose = (event:any) => {
+  const handleChoose = (event: any) => {
     event.stopPropagation();
     setOpenSlide(0);
     setCurrentPage(1);
@@ -21,7 +21,7 @@ export default function NavHov() {
   useEffect(() => {
     setOpenSlide(0);
   }, [currentPage, openSlide]);
- 
+
   return (
     <>
       <div>
@@ -31,6 +31,7 @@ export default function NavHov() {
             type="checkbox"
             className="drawer-toggle"
             checked={openSlide == 0 ? false : true}
+            readOnly
           />
           <div className="drawer-content ">
             <label
@@ -41,14 +42,10 @@ export default function NavHov() {
                 className="h-[35px] w-[35px]"
                 fill="none"
                 viewBox="0 0 24 24"
-               
                 stroke="white"
                 aria-hidden="true"
               >
-                <path
-                  
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </label>
           </div>
@@ -88,7 +85,9 @@ export default function NavHov() {
                 <Link href={ROUTES.PAGE.PRIVACY}>Chính sách bảo mật</Link>
               </li>
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
-                <Link href={ROUTES.PAGE.RULES}>Điều Khoản và Quyền riêng tư</Link>
+                <Link href={ROUTES.PAGE.RULES}>
+                  Điều Khoản và Quyền riêng tư
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,8 +1,8 @@
 import { title } from "process";
 
 const HomeContent = {
-  title: "MẠNG XÃ HỘI ",
-  title_b: "DÀNH CHO NGƯỜI VIỆT",
+  title: "MẠNG XÃ HỘI DÀNH CHO NGƯỜI VIỆT ",
+  
   description:
     "OCCO - Ứng dụng đa tính năng độc đáo, mới mẻ, dễ sử dụng, giúp người dùng dễ dàng kết nối, trò chuyện, tương tác mang lại cảm xúc.",
   feature: "Các tính năng độc đáo",

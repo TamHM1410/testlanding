@@ -158,12 +158,11 @@ export default function AboutFooter() {
                   </div>
                 </div>
               </div>
-              <br/>
+              <br />
             </div>
           </div>
         </div>
       </div>
-     
     </>
   );
 }

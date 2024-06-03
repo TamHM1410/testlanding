@@ -4,8 +4,10 @@ import { Content } from "@/utils";
 export default function () {
   return (
     <>
-      <div className="py-10 mx-[10%] text-white grid lg:grid-cols-2 gap-5 2xl:text-2xl">
-        <div>
+      <div className="py-10 mx-[10%] text-white  2xl:text-2xl 2xl:mx-[10%]">
+      <div className="flex justify-center">
+      <div className="flex grid lg:grid-cols-2 gap-52 max-w-[1440px] ">
+       <div>
           <Image src={phone} alt="" />
         </div>
         <div
@@ -31,6 +33,8 @@ export default function () {
 
 
         </div>
+       </div>
+      </div>
       </div>
     </>
   );

@@ -8,10 +8,10 @@ import Link from "next/link";
 export default function AboutHero() {
   return (
     <>
-      <div className="  max-sm:px-5 max-lg:px-5  lg:mx-[10%] text-white pt-10   min-w-screen flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l ">
-        <div className="lg:flex max-2xl:justify-around 2xl:justify-between items-center max-w-[1440px] 2xl:min-w-[1440px] lg:mx-[10%] md:mx-[5%]">
-          <div className="">
-            <div className="max-sm:w-[300px] max-sm:h-auto w-[321px] h-[70px] text-2xl	 font-bold	 tracking-wide	text-left ">
+      <div className="  max-sm:px-5 max-lg:px-5  lg:mx-[10%] text-white pt-10   min-w-screen flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l max-sm:mx-[5%] ">
+        <div className="lg:flex max-2xl:justify-around 2xl:justify-between items-center max-w-[1440px] 2xl:min-w-[1440px]   ">
+          <div className="max-lg:mx-[10%] lg:mx-[8%] 2xl:mx-[5] ">
+            <div className="max-sm:w-[300px] max-sm:h-auto w-[321px] h-[70px] text-2xl	 font-bold	 tracking-wide	text-left  ">
               <div>{Content.aboutContent.title}</div>
             </div>
             <div className="font-medium text-sm" style={{ color: "#817DA0" }}>
@@ -39,7 +39,7 @@ export default function AboutHero() {
             </div>
           </div>
 
-          <div className="flex justify-center max-sm:pt-10 max-sm:mt-10 max-sm:items-center sm:mt-10">
+          <div className="flex justify-center max-sm:pt-10 max-sm:mt-10 max-sm:items-center sm:mt-10 max-lg:mx-[10%] mx-[5%]">
             <div className="bg-gradient-to-r from-purpleCus to-paleteCus w-[300px] h-[280px] rounded-full flex items-center justify-center">
               <Image width={300} height={200} alt="no" src={Lover} />
             </div>
