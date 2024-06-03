@@ -4,7 +4,7 @@ import { Content } from "@/utils";
 export default function AboutOcco() {
   return (
     <>
-      <div className="min-w-screen max-w-screen py-5 pb-10 flex justify-center 2xl:text-2xl ">
+      <div className="min-w-screen max-w-screen py-5 pb-10 flex justify-center 2xl:text-2xl overflow-x-scroll no-scrollbar  ">
         <div className="lg:grid lg:grid-cols-2 lg:gap-5 py-5 mx-[10%] lg:h-[527px] min-h-fit max-lg:flex max-lg:flex-col-reverse  max-w-[1440px] max-md:mx-[10%]">
           <div
             className=" flex items-center  max-lg:pt-10 

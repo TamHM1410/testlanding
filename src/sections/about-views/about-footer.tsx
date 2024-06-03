@@ -10,7 +10,7 @@ import email from "../../../public/asset/images/email.png";
 export default function AboutFooter() {
   return (
     <>
-      <div className="flex flex-col pt-20  px-10 min-w-screen  text-white justify-center relative md:hidden overflow-x-scroll">
+      <div className="flex flex-col pt-20  px-10 min-w-screen  text-white justify-center relative md:hidden overflow-x-scroll overflow-x-scroll no-scrollbar ">
         <div className="flex flex-col py-5 ">
           <div className="text-2xl font-bold">
             {Content.HomeContent.registerContact}

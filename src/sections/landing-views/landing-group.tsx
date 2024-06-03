@@ -43,8 +43,8 @@ export default function LandingGroup() {
   return (
     <>
       {/* { mobile screen} */}
-      <div className=" max-h-max	2xl:text-2xl  pt-10 px-10 text-white flex justify-center items-center md:hidden flex-col min-w-screen  max-w-[1440px]">
-        <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:h-[332px] max-sm:h-[332px] bg-customPurple  border-2 border-purple-800 rounded-full	flex items-center justify-center shadow  shadow-customPurple">
+      <div className=" max-h-max	2xl:text-2xl  pt-10 px-10 text-white flex justify-center items-center md:hidden flex-col min-w-screen  max-w-[1440px] overflow-x-scroll no-scrollbar">
+        <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:h-[332px] max-sm:h-[332px] bg-customPurple  border-2 border-purple-800 rounded-full	flex items-center justify-center shadow  shadow-customPurple ">
           <div
             className="  rounded-box  w-[204px]"
             onScroll={(event) => handleScroll(event)}

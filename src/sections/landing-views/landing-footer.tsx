@@ -14,13 +14,13 @@ import Link from "next/link";
 export default function LandingFooter() {
   return (
     <>
-      <div className="flex  2xl:text-2xl flex-col pt-15 py-5 px-5 min-w-screen mã-h- text-white justify-center relative lg:hidden overflow-x-scroll lg:max-h-[30vh]">
+      <div className="flex  2xl:text-2xl flex-col pt-15 py-5  min-w-screen text-white justify-center relative lg:hidden overflow-x-scroll no-scrollbar lg:max-h-[30vh] w-full">
         <div className="flex flex-col py-5 md:mx-[10%] max-sm:mx-[5%]">
           <div className="text-2xl font-bold">
             {Content.HomeContent.registerContact}
           </div>
           <div
-            className="py-3 max-sm:w-[320px] max-sm:h-[48px] text-sm "
+            className="py-3 max-sm:w-[320px] max-sm:h-[48px] text-sm overflow-x-scroll no-scrollbar "
             style={{ color: "#817DA0" }}
           >
             {Content.HomeContent.contact_des}

@@ -8,7 +8,7 @@ import NavHov from "./Nav-hov";
 export default function Navbar() {
   return (
     <>
-      <div className="text-white min-w-sreen max-h-[80px] bg-navCor">
+      <div className="text-white min-w-sreen max-h-[80px] bg-navCor overflow-x-scroll no-scrollbar ">
         <div className="flex justify-center ">
           <nav
             className="lg:mx-[10%] flex  items-center justify-between p-6  lg:max-w-[1440px] w-full max-sm:mx-[5%] max-md:mx-[10%] md:max[5%] max-lg:mx-[10%] 2xl:mx-[5%]"

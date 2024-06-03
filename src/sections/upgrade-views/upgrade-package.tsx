@@ -17,7 +17,7 @@ export default function UpgradePackage() {
                 <>
                   <div
                   key={index}
-                    className="package flex  h-[240px] bg-customBlack rounded relative flex-col border-2 border-purple-600 min-h-max"
+                    className="package flex  h-[240px] bg-customBlack rounded relative flex-col border-2 border-purple-600 min-h-max "
                     style={{
                       borderColor:
                         "linear-gradient(to bottom, #EF01BC 0%,#6603AC 100%)",

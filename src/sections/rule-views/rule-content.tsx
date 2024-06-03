@@ -2,7 +2,7 @@ import { Content } from "@/utils";
 export default function RuleContent() {
   return (
     <>
-      <div className="py-5 min-h-screen text-white flex justify-center flex flex-col">
+      <div className="py-5 min-h-screen text-white flex justify-center flex flex-col overflow-x-scroll no-scrollbar ">
         <div className="flex justify-center py-10 text-3xl text-customGrey">
           {Content.rule.title}
         </div>

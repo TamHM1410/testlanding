@@ -5,7 +5,7 @@ import Crown from "../../../public/asset/images/crown.png";
 export default function UpgradeBenefit() {
   return (
     <>
-      <div className="py-5 mx-[5%] gap-y-5 text-white lg:px-10 2xl:text-2xl">
+      <div className="py-5 mx-[5%] gap-y-5 text-white lg:px-10 2xl:text-2xl overflow-x-scroll no-scrollbar ">
         <div className="flex justify-center">
           <div className="max-w-[1440px]">
             <div className="flex max-sm:justify-center pb-10">

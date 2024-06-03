@@ -10,7 +10,7 @@ import Par from '../../../public/asset/images/parsing.png'
 export default function LandingFeature() {
   return (
     <>
-      <div className="py-5  max-sm:px-5 px-10 text-white 2xl:text-2xl">
+      <div className="py-5  max-sm:px-5 px-10 text-white 2xl:text-2xl overflow-x-scroll no-scrollbar ">
         <div className="flex justify-center font-bold max-sm:text-xl text-2xl">
           {" "}
           {Content.HomeContent.feature}

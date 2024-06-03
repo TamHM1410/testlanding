@@ -22,7 +22,7 @@ export default function AboutPartner() {
 
   return (
     <>
-      <div className=" px-10 text-white max-w-screen min-w-screen 2xl:text-2xl lg:mt-10 max-sm:px-5">
+      <div className=" px-10 text-white max-w-screen min-w-screen 2xl:text-2xl lg:mt-10 max-sm:px-5 overflow-x-scroll no-scrollbar ">
         <div className=" flex flex-col justify-center gap-y-5">
           <div className="text-2xl font-bold flex justify-center text-2xl">
             {Content.aboutContent.partner}

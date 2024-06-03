@@ -5,7 +5,7 @@ import email from "../../../public/asset/images/email.png"
 export default function LandingSharing() {
   return (
     <>
-      <div className="flex flex-col  justify-center text-white min-w-screen py-5 2xl:text-2xl">
+      <div className="flex flex-col  justify-center text-white min-w-screen py-5 2xl:text-2xl overflow-x-scroll no-scrollbar ">
         <div className=" flex justify-center md:flex-col">
           <div className="flex  max-sm:w-[321px] max-sm:h-[81px] font-bold text-2xl text-center sm:hidden md:hidden">
             {Content.HomeContent.share_highlight}

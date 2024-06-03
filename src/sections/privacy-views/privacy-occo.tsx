@@ -2,7 +2,7 @@ import { Content } from "@/utils";
 export default function PrivacyOcco() {
   return (
     <>
-        <div className="py-5 min-h-screen text-white flex justify-center flex flex-col">
+        <div className="py-5 min-h-screen text-white flex justify-center flex flex-col overflow-x-scroll no-scrollbar ">
         <div className="flex justify-center">
         <div className="flex justify-center py-10 text-2xl  text-customGrey max-w-[1440px] mx-[10%]">
           {Content.privacy.title}
