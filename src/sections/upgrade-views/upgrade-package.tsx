@@ -3,14 +3,14 @@ import { Content } from "@/utils";
 export default function UpgradePackage() {
   return (
     <>
-      <div className="py-10 px-5 text-white mx-[10%] max-sm:mx-[2%] 2xl:mx-[25%]">
+      <div className="py-10  text-white mx-[10%] max-sm:mx-[2%] 2xl:mx-[25%]">
        <div className="flex justify-center">
         <div className="max-w-[1440px]">
-        <div className="flex justify-center text-center flex-col gap-y-5">
+        <div className="flex justify-center text-center flex-col gap-y-5 pb-5">
           <div className="text-2xl font-bold">{Content.upgrade.register}</div>
           <div className=" text-customGrey">{Content.upgrade.re_des}</div>
         </div>
-        <div className="py-5 grid grid-cols-3 gap-x-2 lg:gap-x-10 ">
+        <div className="py-5 grid grid-cols-3 gap-x-2 lg:gap-10 ">
           {Content.upgrade.card &&
             Content.upgrade.card.map((item,index) => {
               return (
@@ -25,7 +25,7 @@ export default function UpgradePackage() {
                   >
                     <div className="flex justify-center">
                       <div
-                        className="max-sm:text-xs text-xs   absolute  top-[-19px] rounded-xl px-1 py-2"
+                        className="max-sm:text-xs text-xs   absolute  top-[-19px] rounded-xl px-1 py-2 w-[80%] text-center text-sm"
                         style={{ backgroundColor: "#FF6539" }}
                       >
                         {item.title}
