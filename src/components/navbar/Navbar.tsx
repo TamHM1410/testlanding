@@ -8,13 +8,14 @@ import NavHov from "./Nav-hov";
 export default function Navbar() {
   return (
     <>
-      <div className="text-white min-w-sreen max-h-[80px] bg-navCor overflow-x-scroll no-scrollbar ">
-        <div className="flex justify-center ">
+      <div className="text-white min-w-sreen max-h-[80px] bg-navCor overflow-x-scroll no-scrollbar  flex justify-center fixed w-full z-10">
+        <div className="flex justify-center  max-w-[1440px] w-[1440px]">
           <nav
-            className="lg:mx-[10%] flex  items-center justify-between p-6  lg:max-w-[1440px] w-full max-sm:mx-[5%] max-md:mx-[10%] md:max[5%] max-lg:mx-[10%] 2xl:mx-[5%]"
+            className="px-5 flex  items-center justify-between p-6  lg:max-w-[1440px] w-full z-10 "
             aria-label="Global"
           >
             <div className="flex lg:flex-1 text-white flex-row gap-1 ">
+         
               <a href="#" className="-m-1.5 p-1.5">
                 <Image
                   src={logo}
@@ -28,7 +29,7 @@ export default function Navbar() {
                 Occo
               </span>
             </div>
-            <div className="flex lg:hidden flex-row gap-1 items-center  ">
+            <div className="flex lg:hidden flex-row gap-5 items-center  ">
               <span className="flex items-center border w-[100px] h-[36px] justify-center text-xs	rounded-3xl text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text border border-purple-700  border-2 text-white">
                 <Link href={ROUTES.PAGE.UPGRADE}>Nâng cấp VIP</Link>
               </span>

@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function RuleHero() {
   return (
     <>
-      <div className="text-white overflow-x-scroll no-scrollbar  max-lg:h-[170px] w-full bg-black grid grid-cols-3 h-[250px] max-sm:px-5 grid-flow-row 2xl:text-2xl">
-        <div className=" text-2xl font-bold flex lg:justify-center items-center  max-sm:text-center col-span-2 w-full md:mx-[10%]">
+      <div className="text-white overflow-x-scroll no-scrollbar   w-full bg-black grid grid-cols-3  max-sm:px-5 grid-flow-row 2xl:text-2xl px-5 pt-24 lg:text-[50px]">
+        <div className=" text-2xl font-bold flex lg:justify-center items-center  max-sm:text-center col-span-2 w-full max-sm:text-[14px] lg:text-[46px]">
           Điều Khoản & 
           Quyền riêng tư
         </div>

@@ -1,12 +1,17 @@
 "use client";
 import { useEffect, useState, useMemo } from "react";
+import { usePathname } from "next/navigation";
+
 import Link from "next/link";
 import { ROUTES } from "@/routes/route";
 import Image from "next/image";
 import logo from "../../../public/asset/images/logo.jpg";
 export default function NavHov() {
+  const params = usePathname();
   const [currentPage, setCurrentPage] = useState(0);
   const [openSlide, setOpenSlide] = useState(0);
+  const [active, setActive] = useState(0);
+
   const handleOver = (event: any) => {
     event.stopPropagation();
     setOpenSlide(0);
@@ -17,6 +22,25 @@ export default function NavHov() {
     setOpenSlide(0);
     setCurrentPage(1);
   };
+  useEffect(() => {
+    switch (params) {
+      case "/":
+        setActive(0);
+        break;
+      case "/about":
+        setActive(1);
+        break;
+      case "/upgrade":
+        setActive(2);
+        break;
+      case "/privacy":
+        setActive(3);
+        break;
+      case "/rules":
+        setActive(4);
+        break;
+    }
+  }, [params]);
 
   useEffect(() => {
     setOpenSlide(0);
@@ -33,13 +57,13 @@ export default function NavHov() {
             checked={openSlide == 0 ? false : true}
             readOnly
           />
-          <div className="drawer-content ">
+          <div className="drawer-content  flex justify-end">
             <label
               htmlFor="my-drawer"
-              className="btn btn-primary drawer-button bg-navCor border-0"
+              className="btn btn-primary drawer-button bg-navCor border-0  px-0"
             >
               <svg
-                className="h-[35px] w-[35px]"
+                className="h-[35px] w-[35px]  "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="white"
@@ -56,7 +80,7 @@ export default function NavHov() {
               className="drawer-overlay"
               onClick={(event) => handleOver(event)}
             ></label>
-            <ul className="menu p-4 w-80 min-h-full  bg-navCor text-white relative z-2">
+            <ul className="menu p-4 w-80 min-h-full  bg-navCor text-white  ">
               <div className="flex flex-row gap-3">
                 <a href="#" className="-m-1.5 p-1.5">
                   <Image
@@ -76,16 +100,48 @@ export default function NavHov() {
                 className="pt-3 active:text-red"
                 onClick={(event) => handleChoose(event)}
               >
-                <Link href={ROUTES.PAGE.ROOT}>Trang Chủ</Link>
+                <Link
+                  href={ROUTES.PAGE.ROOT}
+                  style={{ color: active == 0 ? "#f44af4" : "white" }}
+                  className="font-bold"
+                >
+                  Trang Chủ
+                </Link>
               </li>
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
-                <Link href={ROUTES.PAGE.ABOUT}>Về Occo</Link>
+                <Link
+                  href={ROUTES.PAGE.ABOUT}
+                  style={{ color: active == 1 ? "#f44af4" : "white" }}
+                  className="font-bold"
+                >
+                  Về Occo
+                </Link>
               </li>
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
-                <Link href={ROUTES.PAGE.PRIVACY}>Chính sách bảo mật</Link>
+                <Link
+                  href={ROUTES.PAGE.UPGRADE}
+                  style={{ color: active == 2 ? "#f44af4" : "white" }}
+                  className="font-bold"
+                >
+                  Nâng cấp vip
+                </Link>
               </li>
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
-                <Link href={ROUTES.PAGE.RULES}>
+                <Link
+                  href={ROUTES.PAGE.PRIVACY}
+                  style={{ color: active == 3 ? "#f44af4" : "white" }}
+                  className="font-bold"
+                >
+                  Chính sách bảo mật
+                </Link>
+              </li>
+
+              <li className="pt-3" onClick={(event) => handleChoose(event)}>
+                <Link
+                  href={ROUTES.PAGE.RULES}
+                  style={{ color: active == 4 ? "#f44af4" : "white" }}
+                  className="font-bold"
+                >
                   Điều Khoản và Quyền riêng tư
                 </Link>
               </li>

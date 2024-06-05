@@ -5,11 +5,11 @@ import Crown from "../../../public/asset/images/crown.png";
 export default function UpgradeBenefit() {
   return (
     <>
-      <div className="py-5 mx-[5%] gap-y-5 text-white lg:px-10 2xl:text-2xl overflow-x-scroll no-scrollbar ">
+      <div className="  gap-y-5 text-white  overflow-x-scroll no-scrollbar  ">
         <div className="flex justify-center">
-          <div className="max-w-[1440px]">
-            <div className="flex max-sm:justify-center pb-10">
-              <div className="font-bold text-2xl"> Quyền lợi của VIP</div>
+          <div className="max-w-[1440px] px-5">
+            <div className="flex max-sm:justify-center pb-10 lg:text-[50px]">
+              <div className="font-bold lg:text-[50px] max-sm:text-[22px]" > Quyền lợi của VIP</div>
             </div>
             <div className="grid lg:grid-cols-2 max-sm:grid-cols-1  lg:justify-items-center lg:py-10">
               <div className="">
@@ -17,10 +17,10 @@ export default function UpgradeBenefit() {
                   return (
                     <>
                       <div className="flex flex-row gap-5 py-1" key={index}>
-                        <div className="w-[30px] h-[30px] min-w-[30px] min-h-[30px] ">
-                          <Image src={benefit} alt="" height={30} width={30} />
+                        <div className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] ">
+                          <Image src={benefit} alt="" className="w-full h-full"/>
                         </div>
-                        <div className="flex items-center text-lg	">
+                        <div className="flex items-center max-sm:text-[18px] lg:text-[20px]	" >
                           {item.title}
                         </div>
                       </div>
@@ -28,7 +28,7 @@ export default function UpgradeBenefit() {
                   );
                 })}
               </div>
-              <div className="flex justify-center px-20 py-5">
+              <div className="flex justify-center lg:px-24 py-5 ">
                 <Image
                   src={Crown}
                   alt=""

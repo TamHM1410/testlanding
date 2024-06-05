@@ -1,6 +1,6 @@
 import { Content } from "@/utils";
 import Lover from "../../../public/asset/images/lover.png";
-import blackAppStore from "../../../public/asset/images/blackappstore.png";
+import blackAppStore from "../../../public/asset/images/Group (1).png";
 import google from "../../../public/asset/images/google_play.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,30 +8,43 @@ import Link from "next/link";
 export default function LandingHero() {
   return (
     <>
-        <div className="  max-sm:px-5 max-lg:px-5  lg:mx-[10%] text-white pt-10   min-w-screen flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l max-sm:mx-[5%]  ">
-        <div className="lg:flex max-2xl:justify-around 2xl:justify-between items-center max-w-[1440px] 2xl:min-w-[1440px] overflow-x-scroll no-scrollbar   ">
-          <div className="max-lg:mx-[10%] lg:mx-[8%] 2xl:mx-[5]  max-sm:mx-[0%] ">
-            <div className="max-sm:w-[300px] max-sm:h-auto w-[321px] h-[70px] text-2xl	 font-bold	 tracking-wide	text-left  ">
-              <div>{Content.HomeContent.title}</div>
+      <div className="  text-white pt-10   min-w-screen flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l     overflow-x-scroll	 no-scrollbar ">
+        <div className="lg:flex max-2xl:justify-around justify-between items-center max-w-[1440px] 2xl:min-w-[1440px] overflow-x-scroll no-scrollbar lg:w-[1440px]   max-sm:w-full ">
+          <div className="px-5 pt-20">
+            <div className=" max-sm:h-auto w-full h-full text-2xl	 font-bold	 tracking-wide	text-left  ">
+              <div
+                style={{ lineHeight: 1.3 }}
+                className="w-[628px] h-[160px] text-5xl flex items-center max-sm:w-[321px] max-sm:h-[68px] max-sm:text-[28px]"
+              >
+                {Content.HomeContent.title}
+              </div>
             </div>
-            <div className="font-medium text-sm 2xl:text-xl" style={{ color: "#817DA0" }}>
+            <div
+              className="font-medium text-sm text-lg max-sm:text-[14px] max-sm:w-[349px] max-sm:h-[71px]  pt-[10px]"
+              style={{ color: "#817DA0" }}
+            >
               {Content.HomeContent.description}
             </div>
 
             <div className="flex flex-row gap-5  pt-5">
-              <button className="  border border-white rounded-md">
-                <Link href="/https://play.google.com/store/apps/details?id=com.ea.game.pvzfree_row&hl=vi">
+              <button className="h-[60px] w-[180px] max-sm:w-[114px] max-sm:h-[33px]">
+                <Link href="https://www.apple.com/vn/store">
                   {" "}
-                  <Image src={blackAppStore} alt="" quality={100} />
+                  <Image
+                    src={blackAppStore}
+                    alt=""
+                    className="   w-full h-full"
+                    quality={100}
+                  />
                 </Link>
               </button>
-              <button>
+              <button className="w-[180px] h-[60px] max-sm:w-[114px] max-sm:h-[33px]">
                 <Link href="https://www.apple.com/vn/store">
                   {" "}
                   <Image
                     src={google}
                     alt=""
-                    className="  border border-white rounded-md"
+                    className="   w-full h-full"
                     quality={100}
                   />
                 </Link>
@@ -39,42 +52,13 @@ export default function LandingHero() {
             </div>
           </div>
 
-          <div className="flex justify-center max-sm:pt-10 max-sm:mt-10 max-sm:items-center sm:mt-10 max-lg:mx-[10%] mx-[5%] max-sm:mx-[0%]">
-            <div className="bg-gradient-to-r from-purpleCus to-paleteCus w-[300px] h-[280px] rounded-full flex items-center justify-center">
-              <Image width={300} height={200} alt="no" src={Lover} />
+          <div className="flex justify-center   max-sm:items-center  max-lg:pt-[50px] justify-end  w-full pt-20 ">
+            <div className="bg-gradient-to-r from-purpleCus to-paleteCus lg:w-[484px] lg:h-[464px] rounded-full flex items-center justify-center max-lg:w-[290px] max-lg:h-[279px]">
+              <Image alt="no" src={Lover} className="w-full h-full" />
             </div>
           </div>
         </div>
       </div>
-     
     </>
   );
 }
- {/* <div className="  max-sm:px-5 max-lg:px-5   text-white pt-10   min-w-full flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l">
-       <div className="lg:flex  2xl:justify-between justify-center lg:mx-[10%] items-center max-w-[1440px] 2xl:min-w-[1440px] ">
-       <div className="max-lg:mx-[10%] lg:mx-[8%] 2xl:mx-[5%]">
-          <div className="max-sm:w-[300px] max-sm:h-auto w-[321px] h-[70px]  text-2xl	 font-bold	 tracking-wide	text-left ">
-            <div>{Content.HomeContent.title}</div>
-            <div> {Content.HomeContent.title_b}</div>
-          </div>
-          <div className="font-medium text-sm" style={{ color: "#817DA0" }}>
-            {Content.HomeContent.description}
-          </div>
-
-          <div className="flex flex-row gap-5  pt-5">
-            <button className="  border border-white rounded-md">
-              <Image src={blackAppStore} alt=""  quality={100}/>
-            </button>
-            <button >
-              <Image src={google} alt="" className="  border border-white rounded-md"  quality={100}/>
-            </button>
-          </div>
-        </div>
-
-        <div className="flex justify-center max-sm:pt-10 max-sm:mt-10 max-sm:items-center sm:mt-10 lg:mx-[8%]">
-          <div className="bg-gradient-to-r from-purpleCus to-paleteCus w-[300px] h-[280px] rounded-full flex items-center justify-center">
-            <Image width={300} height={200} alt="no" src={Lover} />
-          </div>
-        </div>
-       </div>
-      </div> */}

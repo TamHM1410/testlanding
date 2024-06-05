@@ -51,11 +51,10 @@ export default function LandingGroup() {
           >
             <div className="carousel-item w-full  flex flex-col">
               <Image
-                height={411}
-                width={204}
+               
                 src={phone}
                 alt=""
-                className="w-full h-full"
+                className="w-full h-full "
                 key={0}
                 quality={100}
               />
@@ -76,14 +75,14 @@ export default function LandingGroup() {
               >
                 <div className=" flex  justify-center">
                   <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={location} alt="" />
+                    <Image src={location} alt=""  width={17} height={17} quality={100}/>
                   </div>
                 </div>
-                <div className="py-2 flex  justify-center">
+                <div className="py-2 flex  justify-center text-[18px]">
                   {Content.HomeContent.location}
                 </div>
                 <div
-                  className=" flex  justify-center text-sm w-full text-center"
+                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
                   style={{ color: "#817DA0" }}
                 >
                   {Content.HomeContent.location_des}
@@ -92,12 +91,12 @@ export default function LandingGroup() {
               <div className="carousel-item flex flex-col  w-full">
                 <div className=" flex  justify-center">
                   <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={heart} alt="" />
+                    <Image src={heart} alt=""  width={17} height={17} quality={100}/>
                   </div>
                 </div>
-                <div className="py-2 flex  justify-center">Nhắn tin</div>
+                <div className="py-2 flex  justify-center text-[18px]">Nhắn tin</div>
                 <div
-                  className=" flex  justify-center text-sm w-full text-center"
+                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
                   style={{ color: "#817DA0" }}
                 >
                   Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi
@@ -107,12 +106,12 @@ export default function LandingGroup() {
               <div className="carousel-item flex flex-col  w-full">
                 <div className=" flex  justify-center">
                   <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={reta} alt="" />
+                    <Image src={reta} alt="" width={17} height={17} quality={100}/>
                   </div>
                 </div>
-                <div className="py-2 flex  justify-center">Độ tương hợp</div>
+                <div className="py-2 flex  justify-center text-[18px]">Độ tương hợp</div>
                 <div
-                  className=" flex  justify-center text-sm w-full text-center"
+                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
                   style={{ color: "#817DA0" }}
                 >
                   Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi
@@ -122,14 +121,14 @@ export default function LandingGroup() {
               <div className="carousel-item flex flex-col  w-full">
                 <div className=" flex  justify-center">
                   <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={user} alt="" />
+                    <Image src={user} alt="" width={17} height={17} quality={100}/>
                   </div>
                 </div>
-                <div className="py-2 flex  justify-center">
+                <div className="py-2 flex  justify-center text-[18px]">
                   Chi tiết profile
                 </div>
                 <div
-                  className=" flex  justify-center text-sm w-full text-center"
+                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
                   style={{ color: "#817DA0" }}
                 >
                   Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá
@@ -148,7 +147,7 @@ export default function LandingGroup() {
                   style={{
                     backgroundColor:
                       scrollPosition <= divWidth - 1 ? "#A11BC7" : "#1D1E3C",
-                    width: scrollPosition === 0 ? 24 : 12,
+                    width: scrollPosition === 0 ? 20 : 12,
                   }}
                 ></div>
                 <div
@@ -200,26 +199,26 @@ export default function LandingGroup() {
         </div>
       </div>
 
-      <div className="min-w-screen max-w-screen pb-5 flex justify-center 2xl:mx-[10%] mx-[10%]">
+      <div className="min-w-screen max-w-screen pb-5 flex justify-center  px-5">
         <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]">
           <div className=" p-2 grid grid-rows-4 text-white max-lg:p-6 flex items-center">
             <div className="row-span-2 flex flex-col my-10">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
-                <Image src={user} alt="" width={32} height={32} />
+                <Image src={user} alt="" width={32} height={32}      quality={100}/>
               </div>
-              <div className="py-2 text-xl font-bold flex ">
+              <div className="py-2 text-xl font-bold flex " style={{fontSize:26}}>
                 Chi tiết profile
               </div>
-              <div className="w-[306px] text-sm">
+              <div className="w-[306px] text-customGrey " style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
             <div className="row-span-2 flex flex-end flex-col ">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
-                <Image src={heart} alt="" width={32} height={32} />
+                <Image src={heart} alt="" width={32} height={32}     quality={100} />
               </div>
-              <div className="py-2 text-xl font-bold">Nhắn tin </div>
-              <div className="w-[306px] text-sm">
+              <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Nhắn tin </div>
+              <div className="w-[306px] text-sm text-customGrey" style={{fontSize:20}}>
                 Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi cảm
                 thấy hợp gout nhé!
               </div>
@@ -233,24 +232,25 @@ export default function LandingGroup() {
               alt=""
               key={0}
               className="max-lg:none"
+              quality={100}
             />
           </div>
           <div className="p-2 grid grid-rows-4 text-white max-lg:p-6 flex items-center">
             <div className="row-span-2 flex flex-col my-10  items-end">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
-                <Image src={reta} alt="" width={32} height={32} />
+                <Image src={reta} alt="" width={32} height={32}     quality={100} />
               </div>
-              <div className="py-2 text-xl font-bold">Độ tương hợp</div>
-              <div className="w-[306px] text-sm text-right">
+              <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Độ tương hợp</div>
+              <div className="w-[306px] text-sm text-right text-customGrey" style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
             <div className="row-span-2 flex flex-col   items-end">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
-                <Image src={location} alt="" width={32} height={32} />
+                <Image src={location} alt="" width={32} height={32}  />
               </div>
-              <div className="py-2 text-xl font-bold">Vị trí</div>
-              <div className="w-[306px] text-sm text-right">
+              <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Vị trí</div>
+              <div className="w-[306px] text-sm text-right text-customGrey"  style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>

@@ -40,7 +40,7 @@ export default function NavOption() {
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.ROOT} className=" w-full ">
+        <Link href={ROUTES.PAGE.ROOT} className=" w-full  font-semibold	">
           Trang Chủ
         </Link>
       </div>
@@ -55,7 +55,7 @@ export default function NavOption() {
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.ABOUT} className=" w-full ">
+        <Link href={ROUTES.PAGE.ABOUT} className=" w-full font-semibold	">
           Về Occo
         </Link>
       </div>
@@ -70,7 +70,7 @@ export default function NavOption() {
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.PRIVACY} className=" w-full ">
+        <Link href={ROUTES.PAGE.PRIVACY} className=" w-full font-semibold	 ">
           Chính sách bảo mật
         </Link>
       </div>
@@ -85,7 +85,7 @@ export default function NavOption() {
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.RULES} className=" w-full ">
+        <Link href={ROUTES.PAGE.RULES} className=" w-full  font-semibold	  ">
           Điều Khoản & Quyền riêng tư
         </Link>
       </div>
@@ -101,6 +101,7 @@ export default function NavOption() {
                   ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
                   : "",
             }}
+            className="font-semibold	"
           >
             Nâng cấp VIP
           </Link>
