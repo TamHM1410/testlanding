@@ -7,18 +7,18 @@ export default function UpgradeBenefit() {
     <>
       <div className="  gap-y-5 text-white  overflow-x-scroll no-scrollbar  ">
         <div className="flex justify-center">
-          <div className="max-w-[1440px] px-5">
+          <div className="max-w-[1440px] max-[500px]:px-5 min-[500px]:px-[80px] ">
             <div className="flex max-sm:justify-center pb-10 lg:text-[50px]">
               <div className="font-bold lg:text-[50px] max-sm:text-[22px]" > Quyền lợi của VIP</div>
             </div>
-            <div className="grid lg:grid-cols-2 max-sm:grid-cols-1  lg:justify-items-center lg:py-10">
+            <div className="grid lg:grid-cols-2 max-sm:grid-cols-1  lg:justify-items-center ">
               <div className="">
                 {Content.upgrade.benefit.map((item, index) => {
                   return (
                     <>
-                      <div className="flex flex-row gap-5 py-1" key={index}>
-                        <div className="w-[30px] h-[30px] max-sm:w-[20px] max-sm:h-[20px] ">
-                          <Image src={benefit} alt="" className="w-full h-full"/>
+                      <div className="flex flex-row gap-5 py-1 " key={index}>
+                        <div className="w-[24px] h-[24px] max-sm:w-[20px] max-sm:h-[20px] ">
+                          <Image src={benefit} alt="" className="w-full h-full" />
                         </div>
                         <div className="flex items-center max-sm:text-[18px] lg:text-[20px]	" >
                           {item.title}
@@ -28,11 +28,11 @@ export default function UpgradeBenefit() {
                   );
                 })}
               </div>
-              <div className="flex justify-center lg:px-24 py-5 ">
+              <div className="flex justify-center  ">
                 <Image
                   src={Crown}
                   alt=""
-                  className="max-lg:w-[250px] max-lg:h-[250px] lg:w-[450px] lg:h-[450px]"
+                  className="max-lg:w-[250px] max-lg:h-[250px] lg:w-[548px] lg:h-[548px]"
                 />
               </div>
             </div>

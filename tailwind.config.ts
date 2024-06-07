@@ -32,7 +32,8 @@ const config: Config = {
         linear_nav_a:"#EC5DF8",
         linear_nav_b:"#AA4ABA",
         linear_nav_c:"#D568D1",
-
+        p_1:"#6603AC",
+        p_2:"#EF01BC"
 
       },  
     },

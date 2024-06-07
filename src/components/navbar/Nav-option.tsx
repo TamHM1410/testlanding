@@ -31,81 +31,80 @@ export default function NavOption() {
   return (
     <>
       <div
-        className=" h-[40px] flex items-center px-2   border-0"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[80px]"
         style={{
           color: active == 0 ? "white" : "",
           backgroundImage:
             active == 0
-              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              ? `linear-gradient(180deg, rgba(27,10,28,0) 0%, rgba(170,74,186,0.2) 80%, rgba(213,104,209,0.4) 90%)`
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.ROOT} className=" w-full  font-semibold	">
+        <Link href={ROUTES.PAGE.ROOT} className=" w-full  font-semibold	 text-[18px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center">
           Trang Chủ
         </Link>
       </div>
 
       <div
-        className=" h-[40px] flex items-center px-2   border-0"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[80px]"
         style={{
           color: active == 1 ? "white" : "",
           backgroundImage:
             active == 1
-              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              ? "linear-gradient(180deg, rgba(27,10,28,0) 0%, rgba(170,74,186,0.2) 80%, rgba(213,104,209,0.4) 90%)"
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.ABOUT} className=" w-full font-semibold	">
+        <Link href={ROUTES.PAGE.ABOUT} className=" w-full font-semibold text-[18px] max-[110px]:text-[12px]	 max-[1300px]:text-[12px] text-center">
           Về Occo
         </Link>
       </div>
 
       <div
-        className=" h-[40px] flex items-center px-2   border-0"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[190px]"
         style={{
           color: active == 3 ? "white" : "",
           backgroundImage:
             active == 3
-              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              ? "linear-gradient(180deg, rgba(27,10,28,0) 0%, rgba(170,74,186,0.2) 80%, rgba(213,104,209,0.4) 90%)"
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.PRIVACY} className=" w-full font-semibold	 ">
+        <Link href={ROUTES.PAGE.PRIVACY} className=" w-full font-semibold	text-[18px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center  ">
           Chính sách bảo mật
         </Link>
       </div>
 
       <div
-        className=" h-[40px] flex items-center px-2   border-0"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[190px]"
         style={{
           color: active == 4 ? "white" : "",
           backgroundImage:
             active == 4
-              ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
+              ? "linear-gradient(180deg, rgba(27,10,28,0) 0%, rgba(170,74,186,0.2) 80%, rgba(213,104,209,0.4) 90%)"
               : "",
         }}
       >
-        <Link href={ROUTES.PAGE.RULES} className=" w-full  font-semibold	  ">
+        <Link href={ROUTES.PAGE.RULES} className=" w-full  font-semibold	text-[18px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center ">
           Điều Khoản & Quyền riêng tư
         </Link>
       </div>
 
-      <div>
-        <span className="flex items-center border w-[100px] h-[36px] justify-center text-xs	rounded-3xl text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text border border-purple-700  border-2 text-white">
-          <Link
-            href={ROUTES.PAGE.UPGRADE}
-            style={{
-              color: active == 2 ? "white" : "",
-              backgroundImage:
-                active == 2
-                  ? "linear-gradient(to bottom, #230D48 58%, #AA4ABA 100%,#D568D1 100%)"
-                  : "",
-            }}
-            className="font-semibold	"
-          >
-            Nâng cấp VIP
-          </Link>
-        </span>
+    
+
+      <div className="h-[90px] flex items-center">
+        <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  " >
+          <span className="flex w-full bg-navCor text-white rounded-full p-2 px-5"  style={{
+         
+         backgroundImage:
+           active == 2
+             ? "linear-gradient(to right bottom, #6603AC, #EF01BC )"
+             : "",
+            
+       }}>
+           <Link href={ROUTES.PAGE.UPGRADE} className="text-[18px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center">  Nâng cấp VIP</Link>
+          </span>
+        </button>
       </div>
     </>
   );

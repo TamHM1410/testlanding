@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import logo from "../../../public/asset/images/logo.jpg";
 import Link from "next/link";
@@ -5,34 +6,60 @@ import star from "../../../public/asset/images/star.png";
 import NavOption from "./Nav-option";
 import { ROUTES } from "@/routes/route";
 import NavHov from "./Nav-hov";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { Turret_Road } from "next/font/google";
+const turrant=Turret_Road({
+
+  weight: '500',
+  subsets:['latin'],
+
+})
 export default function Navbar() {
+  let pathname = usePathname();
+
+  useEffect(() => {}, [pathname]);
+
   return (
     <>
-      <div className="text-white min-w-sreen max-h-[80px] bg-navCor overflow-x-scroll no-scrollbar  flex justify-center fixed w-full z-10">
-        <div className="flex justify-center  max-w-[1440px] w-[1440px]">
+      <div className="text-white min-w-sreen  bg-navCor   flex justify-center fixed w-full z-10 ">
+        <div className="flex justify-center  max-w-[1440px] w-[1440px]   ">
           <nav
-            className="px-5 flex  items-center justify-between p-6  lg:max-w-[1440px] w-full z-10 "
+            className="max-[500px]:px-5 min-[500px]:px-[80px] flex  items-center justify-between   lg:max-w-[1440px] w-full z-10 h-[90px] max-sm:h-[60px] "
             aria-label="Global"
           >
-            <div className="flex lg:flex-1 text-white flex-row gap-1 ">
-         
-              <a href="#" className="-m-1.5 p-1.5">
-                <Image
-                  src={logo}
-                  alt="Tok"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
-              </a>
-              <span className="flex items-center h-[49px] w-[50px] text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold">
-                Occo
+            <div className="flex lg:flex-1 text-white flex-row gap-3 ">
+              <span className="-m-1.5 p-1.5 flex items-center">
+                <Link href="/">
+                  <Image
+                    src={logo}
+                    alt="Tok"
+                    width={32}
+                    height={40}
+                    className="rounded-full lg:h-[50px] lg:w-[50px] "
+                  />
+                </Link>
+              </span>
+              <span className="flex items-center h-[49px] w-[85px] text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold">
+                <Link href="/" className={`${turrant.className} text-[32px] max-lg:text-[20px]`} >Occo</Link>
               </span>
             </div>
             <div className="flex lg:hidden flex-row gap-5 items-center  ">
-              <span className="flex items-center border w-[100px] h-[36px] justify-center text-xs	rounded-3xl text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text border border-purple-700  border-2 text-white">
-                <Link href={ROUTES.PAGE.UPGRADE}>Nâng cấp VIP</Link>
-              </span>
+              <div className="h-[90px] flex items-center">
+                <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  ">
+                  <span
+                    className="flex w-full bg-navCor text-white rounded-full p-2 px-5"
+                    style={{
+                      backgroundImage:
+                        pathname == "/upgrade"
+                          ? "linear-gradient(to right bottom, #6603AC, #EF01BC )"
+                          : "",
+                    }}
+                  >
+                    <Link href={ROUTES.PAGE.UPGRADE} className="text-[18px] max-lg:text-[16px]"> Nâng cấp VIP</Link>
+                  </span>
+                </button>
+              </div>
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white-700 dropdown"
@@ -42,7 +69,7 @@ export default function Navbar() {
                 </span>
               </button>
             </div>
-            <div className="flex flex-row gap-5 items-center  max-lg:hidden text-customGrey">
+            <div className="flex flex-row gap-5 max-[1100px]:gap-0 items-center  max-lg:hidden text-customGrey">
               <NavOption />
             </div>
           </nav>

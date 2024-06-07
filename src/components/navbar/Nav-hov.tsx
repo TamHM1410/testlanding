@@ -6,6 +6,13 @@ import Link from "next/link";
 import { ROUTES } from "@/routes/route";
 import Image from "next/image";
 import logo from "../../../public/asset/images/logo.jpg";
+import { Turret_Road } from "next/font/google";
+const turrant=Turret_Road({
+
+  weight: '500',
+  subsets:['latin'],
+
+})
 export default function NavHov() {
   const params = usePathname();
   const [currentPage, setCurrentPage] = useState(0);
@@ -82,17 +89,19 @@ export default function NavHov() {
             ></label>
             <ul className="menu p-4 w-80 min-h-full  bg-navCor text-white  ">
               <div className="flex flex-row gap-3">
-                <a href="#" className="-m-1.5 p-1.5">
-                  <Image
-                    src={logo}
-                    alt="Tok"
-                    width={40}
-                    height={40}
-                    className="rounded-full"
-                  />
-                </a>
+                <span className="-m-1.5 p-1.5">
+                  <Link href="/">
+                    <Image
+                      src={logo}
+                      alt="Tok"
+                      width={40}
+                      height={40}
+                      className="rounded-full"
+                    />
+                  </Link>
+                </span>
                 <span className="flex items-center h-[49px] w-[50px] text-xl bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text font-bold">
-                  Occo
+                  <Link href="/" className={`${turrant.className} text-[32px] max-lg:text-[20px]`}>Occo</Link>
                 </span>
               </div>
 
@@ -102,7 +111,7 @@ export default function NavHov() {
               >
                 <Link
                   href={ROUTES.PAGE.ROOT}
-                  style={{ color: active == 0 ? "#f44af4" : "white" }}
+                  style={{ color: active == 0 ? "#A11BC7" : "white" }}
                   className="font-bold"
                 >
                   Trang Chủ
@@ -111,7 +120,7 @@ export default function NavHov() {
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
                 <Link
                   href={ROUTES.PAGE.ABOUT}
-                  style={{ color: active == 1 ? "#f44af4" : "white" }}
+                  style={{ color: active == 1 ? "#A11BC7" : "white" }}
                   className="font-bold"
                 >
                   Về Occo
@@ -120,7 +129,7 @@ export default function NavHov() {
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
                 <Link
                   href={ROUTES.PAGE.UPGRADE}
-                  style={{ color: active == 2 ? "#f44af4" : "white" }}
+                  style={{ color: active == 2 ? "#A11BC7" : "white" }}
                   className="font-bold"
                 >
                   Nâng cấp vip
@@ -129,7 +138,7 @@ export default function NavHov() {
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
                 <Link
                   href={ROUTES.PAGE.PRIVACY}
-                  style={{ color: active == 3 ? "#f44af4" : "white" }}
+                  style={{ color: active == 3 ? "#A11BC7" : "white" }}
                   className="font-bold"
                 >
                   Chính sách bảo mật
@@ -139,7 +148,7 @@ export default function NavHov() {
               <li className="pt-3" onClick={(event) => handleChoose(event)}>
                 <Link
                   href={ROUTES.PAGE.RULES}
-                  style={{ color: active == 4 ? "#f44af4" : "white" }}
+                  style={{ color: active == 4 ? "#A11BC7" : "white" }}
                   className="font-bold"
                 >
                   Điều Khoản và Quyền riêng tư

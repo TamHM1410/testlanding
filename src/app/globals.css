@@ -18,6 +18,7 @@
 
 body {
 
+
 }
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -28,5 +29,12 @@ body {
   .no-scrollbar {
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
+}
+.border-gradient {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, #6603AC, #EF01BC) 1;
+  /* border-image-source:repeating-linear-gradient(45deg, transparent, #4d9f0c 20px); */
+  /* border-radius: 9999px; */
 }
 }

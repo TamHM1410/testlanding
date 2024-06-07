@@ -12,7 +12,7 @@ export default function AboutFooter() {
     <>
       <div className="flex flex-col pt-20  px-10 min-w-screen  text-white justify-center relative md:hidden overflow-x-scroll overflow-x-scroll no-scrollbar ">
         <div className="flex flex-col py-5 ">
-          <div className="text-2xl font-bold">
+          <div className="text-[50px] font-bold">
             {Content.HomeContent.registerContact}
           </div>
           <div

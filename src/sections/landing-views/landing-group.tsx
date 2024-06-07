@@ -199,9 +199,9 @@ export default function LandingGroup() {
         </div>
       </div>
 
-      <div className="min-w-screen max-w-screen pb-5 flex justify-center  px-5">
-        <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]">
-          <div className=" p-2 grid grid-rows-4 text-white max-lg:p-6 flex items-center">
+      <div className="min-w-screen max-w-screen pb-5 flex justify-center ">
+        <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]  max-[500px]:px-5 min-[500px]:px-[80px] ">
+          <div className=" p-2 grid grid-rows-4 text-white  flex items-center">
             <div className="row-span-2 flex flex-col my-10">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
                 <Image src={user} alt="" width={32} height={32}      quality={100}/>
@@ -209,7 +209,7 @@ export default function LandingGroup() {
               <div className="py-2 text-xl font-bold flex " style={{fontSize:26}}>
                 Chi tiết profile
               </div>
-              <div className="w-[306px] text-customGrey " style={{fontSize:20}}>
+              <div className="w-[306px] text-customGrey leading-[30px] " style={{fontSize:20}} >
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function LandingGroup() {
                 <Image src={heart} alt="" width={32} height={32}     quality={100} />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Nhắn tin </div>
-              <div className="w-[306px] text-sm text-customGrey" style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-customGrey leading-[30px]" style={{fontSize:20}}>
                 Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi cảm
                 thấy hợp gout nhé!
               </div>
@@ -235,13 +235,13 @@ export default function LandingGroup() {
               quality={100}
             />
           </div>
-          <div className="p-2 grid grid-rows-4 text-white max-lg:p-6 flex items-center">
+          <div className="p-2 grid grid-rows-4 text-white  flex items-center">
             <div className="row-span-2 flex flex-col my-10  items-end">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
                 <Image src={reta} alt="" width={32} height={32}     quality={100} />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Độ tương hợp</div>
-              <div className="w-[306px] text-sm text-right text-customGrey" style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px]" style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function LandingGroup() {
                 <Image src={location} alt="" width={32} height={32}  />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Vị trí</div>
-              <div className="w-[306px] text-sm text-right text-customGrey"  style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px]"  style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>

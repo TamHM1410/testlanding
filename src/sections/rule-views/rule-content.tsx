@@ -7,7 +7,7 @@ export default function RuleContent() {
           {Content.rule.title}
         </div>
         <div className="flex justify-center">
-          <div className="max-w-[1440px] text-white max-sm:text-[14px] lg:text-[18px] px-5  ">
+          <div className="max-w-[1440px] text-white max-sm:text-[14px] lg:text-[18px] max-[500px]:px-5 min-[500px]:px-[80px] ">
             {Content.rule.content.map((item, index) => {
               return (
                 <>
@@ -24,7 +24,7 @@ export default function RuleContent() {
                             {item.des.map((item, index) => {
                               return (
                                 <>
-                                  <div className="py-3 ">{item}</div>
+                                  <div className="py-3  leading-[34px] max-sm:leading-[22px]">{item}</div>
                                 </>
                               );
                             })}

@@ -10,22 +10,23 @@ export default function LandingSharing() {
             {Content.HomeContent.share_highlight}
           </div>
           <div className="flex  max-sm:hidden max-sm:h-[81px] font-bold text-2xl text-center  justify-center text-left ">
-           <div className="w-[780px] text-left text-center text-5xl max-sm:text-[22px] max-lg:text-[30px]">
-           Chia sẽ những khoảng khắc và <br/>  sự kiện trong cuộc sống của bạn
+           <div className="w-full max-w-[792px] h-[130px] pt-10 text-left text-center text-[50px] max-sm:text-[22px] max-lg:text-[30px] flex items-center leading-[55px] max-[1100px]:leading-[30px] max-sm:w-[321px] max-[760px]:w-[450px]  max-lg:px-5 sm:px-[80px]">
+           Chia sẻ những khoảnh khắc và 
+sự kiện trong cuộc sống của bạn
            </div>
           </div>
           
 
         </div>
-        <div className="pt-5 flex justify-center px-10 md:mt-10">
+        <div className="pt-5 flex justify-center px-10  max-lg:px-5 sm:px-[80px] md:mt-10">
           <div
-            className="flex  max-sm:w-[353px] max-sm:h-[242px] text-sm text-center max-sm:overflow-y-scroll lg:w-[1025px] lg:h-[230px] no-scrollbar max-sm:text-[14px] pt-[10px] lg:text-[20px] max-sm:text-[14px] text-customGrey pb-[25px]"
+            className="flex  max-sm:w-[353px] h-full max-sm:max-h-[242px] text-sm text-center  lg:w-[1025px] lg:h-[230px] no-scrollbar max-sm:text-[14px] pt-[10px] lg:text-[20px] max-sm:text-[14px] text-customGrey pb-[25px] lg:leading-[34px] max-sm:leading-[22px]"
             
           >
             {Content.HomeContent.highlight_des}
           </div>
         </div>
-        <div className="flex justify-center max-md:my-10 ">
+        <div className="flex justify-center max-md:my-10  max-sm:pt-16">
           <div className="max-sm:hidden max-md:hidden">
           <Image src={frame} height={783} width={440} alt=""  quality={100}/>
           </div>
