@@ -17,7 +17,7 @@ export default function UpgradePackage() {
                 <>
                   <div
                   key={index}
-                    className="package flex  h-[517px] bg-customBlack rounded-2xl relative flex-col border-2 border-purple-600 min-h-max  w-[412px]  max-sm:w-[108px]  max-sm:h-[163px]  max-lg:h-[250px] max-lg:w-[240px] max-[686px]:w-[150px]  max-[1300px]:w-[250px] max-[880px]:w-[210px] max-[760px]:w-[180px]  duration-100"
+                    className="package flex  h-[517px] bg-customBlack rounded-2xl relative flex-col border-2 border-purple-600 min-h-max  w-[412px]  max-sm:w-[108px]  max-sm:h-[163px]  max-lg:h-[250px] max-lg:w-[240px] max750px]:w-[150px]  max-[1300px]:w-[250px] max-[880px]:w-[210px] max-[760px]:w-[170px]  duration-100"
                     style={{
                       borderColor:
                         "linear-gradient(to bottom, #EF01BC 0%,#6603AC 100%)",
@@ -25,8 +25,8 @@ export default function UpgradePackage() {
                   >
                     <div className="flex justify-center">
                       <div
-                        className="  absolute  top-[-19px] max-[681px]:top-[-15px] max-sm:top-[-10px] rounded-xl px-1 py-2 w-[200px] text-center font-semibold text-[20px] max-sm:w-[64px] max-sm:text-[7px] max-sm:h-[18px] max-[1302px]:text-[15px] flex items-center justify-center max-[900px]:w-[150px]  max-[686px]:w-[90px]  max-[686px]:w-[150px] 
-                         max-[686px]:text-[8px]  max-[120px]:w-[90px] max-[1302px]:w-[130px] "
+                        className="  absolute  top-[-19px] max-[760px]:top-[-15px] max-sm:top-[-10px] rounded-xl px-1 py-2 w-[200px] text-center font-semibold text-[20px] max-sm:w-[64px] max-sm:text-[7px] max-sm:h-[18px] max-[1302px]:text-[15px] flex items-center justify-center max-[900px]:w-[150px]  max-[760px]:w-[90px]  max-[686px]:w-[150px] 
+                         max-[750px]:text-[8px]  max-[120px]:w-[90px] max-[1302px]:w-[130px] "
                         style={{ backgroundColor: "#FF6539" }}
                       >
                         {item.title}

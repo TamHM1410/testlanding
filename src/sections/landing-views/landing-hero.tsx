@@ -14,7 +14,7 @@ export default function LandingHero() {
             <div className=" max-sm:h-auto w-full h-full text-2xl	 font-bold	 tracking-wide	text-left  ">
               <div
                 style={{ lineHeight: 1.3 }}
-                className="w-[630px] h-full  max-h-[180px] text-[54px] flex items-center max-sm:w-full max-sm:min-w-[321px] max-sm:max-h-[68px] max-sm:text-[28px] max-[1360px]:text-[35px] "
+                className="w-[658px] h-full  max-h-[180px] text-[54px] flex items-center max-sm:w-full max-sm:min-w-[321px] max-sm:max-h-[68px] max-sm:text-[28px] max-[1360px]:text-[35px] "
               >
              MẠNG XÃ HỘI <br/> DÀNH CHO NGƯỜI VIỆT
                 </div>

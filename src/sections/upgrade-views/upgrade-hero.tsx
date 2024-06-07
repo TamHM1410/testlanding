@@ -1,12 +1,12 @@
 import phone from "../../../public/asset/images/3phone.png";
 import Image from "next/image";
 import { Content } from "@/utils";
-export default function () {
+export default function UPgradeHero() {
   return (
     <>
       <div className="py-10  text-white    overflow-x-scroll no-scrollbar max-lg:px-5 sm:px-[80px] pt-24 lg:pt-32 ">
         <div className="flex justify-center ">
-          <div className="flex grid lg:grid-cols-2 gap-0 max-w-[1440px] max-sm:gap-10 max-lg:gap-10 px-5 duration-100  ">
+          <div className="flex grid lg:grid-cols-2 gap-0 max-w-[1440px] max-sm:gap-10 max-lg:gap-10 px-5 duration-100 max-lg:pt-10 ">
             <div className="flex justify-center">
               <Image src={phone} alt="" width={552.6} height={423} />
             </div>

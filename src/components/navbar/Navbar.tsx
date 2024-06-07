@@ -44,8 +44,8 @@ export default function Navbar() {
                 <Link href="/" className={`${turrant.className} text-[32px] max-lg:text-[20px]`} >Occo</Link>
               </span>
             </div>
-            <div className="flex lg:hidden flex-row gap-5 items-center  ">
-              <div className="h-[90px] flex items-center">
+            <div className="flex lg:hidden flex-row gap-5 items-center   ">
+              <div className="h-[90px] flex items-center max-[375px]:hidden">
                 <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  ">
                   <span
                     className="flex w-full bg-navCor text-white rounded-full p-2 px-5"
@@ -69,7 +69,7 @@ export default function Navbar() {
                 </span>
               </button>
             </div>
-            <div className="flex flex-row gap-5 max-[1100px]:gap-0 items-center  max-lg:hidden text-customGrey">
+            <div className="flex flex-row gap-5 max-[1300px]:gap-0 items-center  max-lg:hidden text-customGrey">
               <NavOption />
             </div>
           </nav>
