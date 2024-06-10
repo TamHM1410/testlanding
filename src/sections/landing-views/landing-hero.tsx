@@ -16,26 +16,26 @@ export default function LandingHero() {
               <div
                 
                 className="w-full  h-full  max-h-[200px] text-[54px] flex items-center max-sm:w-full    
-                max-sm:min-w-[321px] max-sm:min-h-[68px] max-sm:text-[28px] max-[1360px]:text-[35px] leading-[80px] max-[1300px]:leading-[50px] min-[1300px]:w-[700px] "
+                max-sm:min-w-[321px] max-sm:min-h-[68px] max-sm:text-[28px] max-[1360px]:text-[35px] leading-[80px] max-[1300px]:leading-[50px] min-[1300px]:w-[700px]  max-sm:leading-8"
               >
              MẠNG XÃ HỘI <br/> DÀNH CHO NGƯỜI VIỆT
                 </div>
             </div>
            <div className="w-full">
            <div
-              className="font-medium lg:text-[18px] w-full h-full  max-w-[713px] max-[510px]:max-w-[393px] 
+              className="font-medium  w-full h-full  max-w-[713px] max-[510px]:max-w-[393px] 
               max-[1293px]:w-full 
-               sm:max-h-[71px] max-sm:text-[14px] 
+               sm:max-h-[71px] 
                  max-sm:pt-[10px]  
                 pb-20 max-[640px]:pb-5
-                leading-[24px] max-lg:leading-[22px] text-justify  max-[890px]:w-full flex "
+                leading-[24px] max-lg:leading-[22px] text-justify  max-[890px]:w-full flex lg:text-[18px] sm:text-[16px] max-sm:text-[14px]"
               style={{ color: "#817DA0" }}
             >
               {Content.HomeContent.description}
             </div>
            </div>
 
-            <div className="flex flex-row gap-5 h-full  items-center  h-[60px] max-[900px]:h-[40px]">
+            <div className="flex flex-row gap-5 h-full  items-center  h-[60px] max-[938px]:h-[80px] max-[890px]:h-[40px]">
               <button className="h-[52px] w-[180px] max-sm:w-[114px] max-sm:h-[33px]">
                 <Link href="https://www.apple.com/vn/store">
                   {" "}
@@ -62,7 +62,7 @@ export default function LandingHero() {
           </div>
 
           <div className="flex  max-[1301px]:justify-center   max-sm:items-center  max-[890px]:pt-[5%]  w-full pt-20 justify-center ">
-            <div className="bg-gradient-to-r from-purpleCus to-paleteCus w-[484px] h-[464px] rounded-full flex items-center justify-center max-lg:w-[290px] max-lg:h-[279px]  max-[1350px]:w-[350px] max-[1350px]:h-[350px] duration-100 ">
+            <div className=" w-[484px] h-[464px] rounded-full flex items-center justify-center max-lg:w-[290px] max-lg:h-[279px]  max-[1350px]:w-[350px] max-[1350px]:h-[350px] duration-100 ">
               <Image alt="no" src={Lover} className="w-full h-full"  />
             </div>
           </div>

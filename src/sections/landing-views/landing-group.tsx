@@ -67,7 +67,7 @@ export default function LandingGroup() {
               <div className="py-2 text-xl font-bold flex " style={{fontSize:26}}>
                 Chi tiết profile
               </div>
-              <div className="w-[306px] text-customGrey leading-[30px] " style={{fontSize:20}} >
+              <div className="w-[306px] text-customGrey leading-[30px] lg:text-[30px] sm:text-[20px] max-sm:text-[12px]" style={{fontSize:20}} >
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function LandingGroup() {
                 <Image src={heart} alt="" width={32} height={32}     quality={100} />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Nhắn tin </div>
-              <div className="w-[306px] text-sm text-customGrey leading-[30px]" style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-customGrey leading-[30px] lg:text-[30px] sm:text-[20px] max-sm:text-[12px]" style={{fontSize:20}}>
                 Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi cảm
                 thấy hợp gout nhé!
               </div>
@@ -99,7 +99,7 @@ export default function LandingGroup() {
                 <Image src={reta} alt="" width={32} height={32}     quality={100} />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Độ tương hợp</div>
-              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px]" style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px] lg:text-[30px] sm:text-[20px] max-sm:text-[12px]" style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function LandingGroup() {
                 <Image src={location} alt="" width={32} height={32}  />
               </div>
               <div className="py-2 text-xl font-bold"  style={{fontSize:26}}>Vị trí</div>
-              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px]"  style={{fontSize:20}}>
+              <div className="w-[306px] text-sm text-right text-customGrey leading-[30px] max-sm:leading-[22px] lg:text-[30px] sm:text-[20px] max-sm:text-[12px]"  style={{fontSize:20}}>
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>

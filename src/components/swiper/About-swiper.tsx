@@ -33,7 +33,7 @@ export default function AboutSwiper(){
     let j = 0;
     return (
     <>
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full sm:hidden">
     <Swiper
         spaceBetween={30}
         centeredSlides={true}

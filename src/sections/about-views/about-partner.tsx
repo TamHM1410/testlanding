@@ -38,11 +38,11 @@ export default function AboutPartner() {
     <>
       <div className="  text-white max-w-screen min-w-screen 2xl:text-2xl lg:mt-10 max-lg:px-5 overflow-x-scroll no-scrollbar ">
         <div className=" flex flex-col justify-center gap-y-5">
-          <div className="text-[50px] pt-5 font-bold flex justify-center text-2xl max-sm:text-[22px] max-[736px]:text-[35px]  max-[500px]:px-5 min-[500px]:px-[80px]">
+          <div className="text-[50px] pt-5 font-bold flex justify-center text-2xl max-sm:text-[22px] max-[736px]:text-[35px]  max-[500px]:px-5 min-[500px]:px-[80px] lg:text-[50px] sm:text-[30px] max-sm:text-[22px]">
             {Content.aboutContent.partner}
           </div>
           <div className="text-customGrey  flex justify-center ">
-            <div className="lg:w-[701px] lg:h-[73px] text-center text-sm 2xl:text-xl max-sm:text-[14px] text-[18px] max-sm:w-[353px] max-sm:h-[87px] max-sm:leading-[22px] sm:leading-[34px] max-[500px]:px-5 min-[500px]:px-[80px]">
+            <div className="lg:w-[701px] lg:h-[73px] text-center text-sm 2xl:text-xl max-sm:text-[14px] text-[18px] max-sm:w-[353px] max-sm:h-[87px] max-sm:leading-[22px] sm:leading-[34px] max-[500px]:px-5 min-[500px]:px-[80px] lg:text-[18px] sm:text-[16px] max-sm:text-[14px]">
               {Content.aboutContent.des}
             </div>
             <div></div>
@@ -62,16 +62,16 @@ export default function AboutPartner() {
                       }}
                     >
                       <div className="flex justify-center">
-                        <Image src={part[i]} alt="" width={241} height={241}  className="max-[1220px]:w-[150px]"/>
+                        <Image src={part[i]} alt="" width={241} height={241}  className="max-[1220px]:w-[150px] max-[900px]:w-[100px] duration-100"/>
                         <div className="hidden">{i++} </div>
                       </div>
                       <div
-                        className="flex justify-center font-bold text-2xl  max-[1220px]:text-[16px]"
+                        className="flex justify-center font-bold lg:text-[30px] sm:text-[25px] max-sm:text-[22px] text-center duration-100"
                         style={{ color: "#7E21C8" }}
                       >
                         {item?.title}
                       </div>
-                      <div className="flex justify-center text-center text-white 2xl:text-xl  text-[20px] px-5 max-[1220px]:text-[16px]">
+                      <div className="flex justify-center text-center text-white lg:text-[20px] sm:text-[18px] max-sm:text-[16px] px-5 duration-100">
                         {item?.des}
                       </div>
                     </div>

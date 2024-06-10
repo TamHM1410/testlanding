@@ -131,9 +131,9 @@ export default function LandingFooter() {
             </div>
             <div className="col-span-2 row-span-2  ">
               <div className=" flex justify-center relative top-[-170px] ">
-                <div className="bg-gradient-to-r from-purple_cus to-blue_pur   w-full max-w-[1440px]  z-0 rounded-3xl   h-[255px]">
-                  <div className="py-10  flex flex-row items-center justify-center gap-10 px-5 ">
-                    <div className="font-bold w-[379px] h-[144px] text-[34px] max-[1290px]:text-[27px] max-[980px]:text-[25px] max-[830px]:text-[22px] max-[730px]:text-[20px]">
+                <div className="bg-gradient-to-r from-purple_cus to-blue_pur   w-full max-w-[1440px]  z-0 rounded-3xl   h-[255px] flex items-center">
+                  <div className="  flex flex-row items-center justify-center gap-10 px-5 ">
+                    <div className="font-bold w-[379px] h-[144px] text-[34px] max-[1350px]:text-[27px] max-[1110px]:text-[25px] max-[900px]:text-[22px] max-[730px]:text-[20px] duration-100">
                       <div>
                         Tải xuống ứng dụng để kết bạn,tương tác,chia sẽ,giải trí
                       </div>
@@ -141,21 +141,21 @@ export default function LandingFooter() {
                     <div className="py-5 flex flex-row gap-10 max-[800px]:gap-3">
                       <div className="">
                         <Image src={qr1} width={109} height={109} alt="" />
-                        <div className="pt-3 w-full text-center text-[20px] max-[1290px]:text-[14px] max-[1493px]:text-[16px] max-[1075px]:text-[12px]">
+                        <div className="pt-3 w-full text-center text-[20px]  max-[1493px]:text-[16px] max-[1075px]:text-[8px] max-[1360px]:text-[10px]">
                           App Store
                         </div>
                       </div>
                       <div>
                         <Image src={qr1} width={109} height={109} alt="" />
-                        <div className="pt-3 w-full text-center text-[20px] max-[1290px]:text-[14px] max-[1493px]:text-[16px] max-[1075px]:text-[12px] max-[1360px]:text-[14px]">
+                        <div className="pt-3 w-full text-center text-[20px]  max-[1493px]:text-[16px]  max-[1075px]:text-[8px] max-[1360px]:text-[10px]">
                           Google Play
                         </div>
                       </div>
                     </div>
                     <div>
                       <div
-                        className="font-bold text-md"
-                        style={{ fontSize: 24 }}
+                        className="font-bold text-[24px] max-[900px]:text-[16px] duration-100"
+                       
                       >
                         Tải xuống ứng dụng ngay bây giờ để trải nghiệm
                       </div>
