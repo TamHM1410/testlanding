@@ -2,8 +2,15 @@
     border-radius: 15px;
     width: 6px;
     height: 6px;
+    background-color: #1D1E3C;
+    opacity: 1;
+   
   }
 
 .swiper-pagination-bullet-active{
     width: 20px;
+    background-color: #A11BC7;
+}
+.swiper-pagination{
+
 }  

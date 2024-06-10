@@ -23,6 +23,14 @@ import { Content } from "@/utils";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
+declare global {
+  interface CSSStyleDeclaration {
+    "--swiper-pagination-color"?: string;
+    "--swiper-pagination-width"?: string;
+    // Declare other custom CSS variables here...
+  }
+}
+
 const slideOption = [
   {
     name: "Chi tiết profile",
@@ -64,23 +72,8 @@ export default function HomeSwiper() {
         }}
         
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper pt- text-white pt-[20]   min-h-[150px]"
-        style={{
-            "--swiper-pagination-color": "#A11BC7",
-            "--swiper-pagination-width": "20px",
-
-            "--swiper-pagination-bullet-inactive-color": "#1D1E3C",
-            "--swiper-pagination-bullet-inactive-opacity": "1",
-            "--swiper-pagination-bullet-size": "6px",
-            "--swiper-pagination-bullet-horizontal-gap": "6px",
-            "--swiper-pagination-bullet-active-size": "12px",
-            "--swiper-pagination-bullet-active-width":"20px",
-            "--swiper-pagination-bullet-active-height":"6px",
-            "--swiper-pagination-bullet-border-radius":"15px"
-
-            
-
-          }}
+        className="mySwiper pt- text-white pt-[20]   min-h-[180px]"
+        
       >
         {
           slideOption.map((item, index) => {

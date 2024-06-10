@@ -20,7 +20,13 @@ import { Content } from "@/utils";
 
 const part = [partner, partner1, partner2];
 
-
+declare global {
+  interface CSSStyleDeclaration {
+    "--swiper-pagination-color"?: string;
+    "--swiper-pagination-width"?: string;
+    // Declare other custom CSS variables here...
+  }
+}
 
 export default function AboutSwiper(){
     let i = 0;
@@ -32,7 +38,7 @@ export default function AboutSwiper(){
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -41,22 +47,7 @@ export default function AboutSwiper(){
       
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper h-[400px] flex justify-center"
-        style={{
-            "--swiper-pagination-color": "#A11BC7",
-            "--swiper-pagination-width": "20px",
-
-            "--swiper-pagination-bullet-inactive-color": "#1D1E3C",
-            "--swiper-pagination-bullet-inactive-opacity": "1",
-            "--swiper-pagination-bullet-size": "6px",
-            "--swiper-pagination-bullet-horizontal-gap": "6px",
-            "--swiper-pagination-bullet-active-size": "12px",
-            "--swiper-pagination-bullet-active-width":"20px",
-            "--swiper-pagination-bullet-active-height":"6px",
-            "--swiper-pagination-bullet-border-radius":"15px"
-
-            
-
-          }}
+       
       >
        
        
