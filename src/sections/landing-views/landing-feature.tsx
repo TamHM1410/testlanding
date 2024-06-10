@@ -10,18 +10,18 @@ import Par from "../../../public/asset/images/parsing.png";
 export default function LandingFeature() {
   return (
     <>
-      <div className="py-10 lg:pt-[120px]  max-lg:px-5 sm:px-[80px] text-white 2xl:text-2xl overflow-x-scroll no-scrollbar px-5">
-        <div className="flex justify-center font-bold  pb-[10px] max-sm:text-[22px] max-sm:w:[240px] max-sm:h-[27px] max-lg:text-[30px] lg:text-[50px]">
+      <div className="py-10 lg:pt-[120px]  max-lg:px-5 sm:px-[80px] text-white 2xl:text-2xl overflow-x-scroll no-scrollbar max-[500px]:px-5 min-[500px]:px-[80px]">
+        <div className="flex justify-center font-bold  pb-[10px] max-sm:text-[22px] max-sm:w:[240px] max-sm:min-h-[27px] max-lg:text-[30px] lg:text-[50px] h-full">
           {" "}
           {Content.HomeContent.feature}
         </div>
 
         <div className="flex justify-center ">
           <div
-            className="py-5 flex justify-center  max-sm:text-[14px] font-medium text-center text-xl  md:w-[713px] md:h-[73px] pb-5  text-[18px]"
+            className="py-5 flex justify-center  max-sm:text-[14px] font-medium text-center text-xl  md:w-[713px] md:min-h-[73px] pb-5  text-[18px] h-full"
             style={{ color: "#817DA0" }}
           >
-            {Content.HomeContent.description}
+            {Content.HomeContent.feature_des}
           </div>
         </div>
 

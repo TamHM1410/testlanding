@@ -45,8 +45,8 @@ export default function LandingGroup() {
     <>
       {/* { mobile screen} */}
      
-      <div className=" max-h-max	2xl:text-2xl  pt-10 px-10 text-white flex justify-center items-center md:hidden flex-col min-w-screen  max-w-[1440px] overflow-x-scroll no-scrollbar">
-      <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:max-h-[332px] max-sm:max-h-[332px]	flex items-center justify-center    h-full">
+      <div className=" max-h-max	2xl:text-2xl  pt-10 px-10 text-white flex justify-center items-center md:hidden flex-col min-w-screen  max-w-[1440px] ">
+      <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:max-h-[332px] max-sm:max-h-[332px]	flex items-center justify-center    h-full w-full">
          
 
           <Image src={group_1} alt="" height={302} width={401}/>
@@ -59,8 +59,8 @@ export default function LandingGroup() {
 
       <div className="min-w-screen max-w-screen pb-5 flex justify-center ">
         <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]  max-[500px]:px-5 min-[500px]:px-[80px] ">
-          <div className=" p-2 grid grid-rows-4 text-white  flex items-center">
-            <div className="row-span-2 flex flex-col my-10">
+          <div className=" p-2 grid grid-rows-4 text-white  flex items-center justify-start" style={{paddingLeft:0}}>
+            <div className="row-span-2 flex flex-col ">
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
                 <Image src={user} alt="" width={32} height={32}      quality={100}/>
               </div>
@@ -71,7 +71,7 @@ export default function LandingGroup() {
                 Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá nhân.
               </div>
             </div>
-            <div className="row-span-2 flex flex-end flex-col ">
+            <div className="row-span-2 flex flex-end flex-col " style={{paddingRight:0}}>
               <div className="w-[64px] h-[64px] bg-purple-700 rounded flex items-center justify-center">
                 <Image src={heart} alt="" width={32} height={32}     quality={100} />
               </div>
