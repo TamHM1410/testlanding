@@ -14,24 +14,24 @@ import Link from "next/link";
 export default function LandingFooter() {
   return (
     <>
-      <div className="flex  2xl:text-2xl flex-col pt-15 py-5  min-w-screen text-white justify-center relative min-[787px]:hidden overflow-x-scroll no-scrollbar lg:max-h-[30vh] w-full z-0 ">
+      <div className="flex  2xl:text-2xl flex-col pt-15 py-5  min-w-screen text-white justify-center relative min-[787px]:hidden  lg:max-h-[30vh] w-full z-0 ">
         <div className="flex flex-col py-5 px-5">
           <div className="text-2xl font-bold  lg:text-5xl max-sm:text-[22px] flex justify-center">
             {Content.HomeContent.registerContact}
           </div>
           <div className="flex justify-center">
           <div
-            className="py-3 max-sm:w-[320px] max-sm:h-[48px] text-sm overflow-x-scroll no-scrollbar  text-lg max-sm:text-[14px] h-[48px]  w-[540px]"
+            className="py-3 max-sm:w-[320px] max-sm:min-h-[48px] text-sm   text-lg max-sm:text-[14px] h-full  min-h-[48px]  w-[540px]"
             style={{ color: "#817DA0" }}
           >
             {Content.HomeContent.contact_des}
           </div>
           </div>
-          <div className="  flex gap-2 py-3  max-sm:pt-5  lg:justify-between flex justify-center ">
+          <div className="  flex gap-2 py-3  max-sm:pt-10  lg:justify-between flex justify-center ">
             <div className=" bg-customBlack border-b border-b-customGrey flex items-center  ">
               <input
                 placeholder="Email của bạn"
-                className="border-0 bg-customBlack max-sm:w-[280px] focus:outline-none  max-[1024px]:w-[500px] w-[500px]"
+                className="border-0 bg-customBlack w-full max-sm:max-w-[280px] focus:outline-none  max-[1024px]:w-[500px] "
               />
             </div>
 

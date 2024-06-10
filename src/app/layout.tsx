@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'MẠNG XÃ HỘI DÀNH CHO NGƯỜI VIỆT',
   
 }
-
+import Head from 'next/head';
 export default function RootLayout({
   children,
 }: {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <link rel="icon" href="https://occo.ee/wp-content/uploads/2022/01/fb_img.png" />
+      <link rel="icon" href="/favicon.ico" />
       <body className={inter.className } style={{backgroundColor:"#040623",minHeight:'100vh'}}>
         <Navbar/>
         {children}

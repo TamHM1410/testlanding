@@ -12,7 +12,7 @@ export default function RuleContent() {
               return (
                 <>
                   <div className="" key={index}>
-                    <div className="title  ">
+                    <div className="title  max-sm:text-[14px] lg:text-[18px]">
                       {item?.title}
                     </div>
                     <div className=" ">{item?.des}</div>
@@ -24,7 +24,7 @@ export default function RuleContent() {
                             {item.des.map((item, index) => {
                               return (
                                 <>
-                                  <div className="py-3  leading-[34px] max-sm:leading-[22px]">{item}</div>
+                                  <div className="py-3  leading-[34px] max-sm:leading-[22px] max-sm:text-[14px] lg:text-[18px]">{item}</div>
                                 </>
                               );
                             })}
@@ -39,7 +39,7 @@ export default function RuleContent() {
           </div>
         </div>
 
-        <div className="flex justify-center pt-10 text-2xl text-center max-sm:text-sm px-5">
+        <div className="flex justify-center pt-10  text-center max-sm:text-sm px-5 max-sm:text-[14px] lg:text-[18px]">
           {Content.rule.conclusion}
         </div>
       </div>

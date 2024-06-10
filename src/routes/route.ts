@@ -5,7 +5,7 @@ const PAGE = {
   UPGRADE: "/upgrade",
   RULES:'/rules'
 };
-
+/////route
 const ROUTES = {
   PAGE: PAGE,
 };

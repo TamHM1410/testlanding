@@ -31,9 +31,10 @@ const aboutContent = {
   des: "OCCO - Ứng dụng đa tính năng độc đáo, mới mẻ, dễ sử dụng, giúp người dùng dễ dàng kết nối, trò chuyện, tương tác mang lại cảm xúc.    ",
   aboutOcco: "Về Occo",
   aboutOcco_des: [
-    "Là mạng xã hội kết nối mọi người dùng tham gia nhắn tin, đăng bài, tìm hiểu, tương tác, chia sẻ.",
-    "Được ra mắt từ 2024, Occo được nhiều người dùng yêu thích bởi các tính năng nâng cao, giao diện bắt mắt & dễ sử dụng.",
-    "Occo hướng đến không chỉ là một mạng xã hội đơn thuần, mà là nơi người dùng có thể tương tác và gặp mặt trực tiếp. Nâng cấp các tính năng tại Occo giúp người dùng tìm kiếm bạn bè theo điều kiện phù hợp, mở các chức năng nâng cao chỉ dành cho VIP để đảm bảo những trải nghiệm tuyể vời khi sử dụng Occo",
+    `Occo là một ứng dụng "Dịch vụ" mạng xã hội Được phát triển và quản lý bởi CÔNG TY TNHH NPH DIGITAL.`,
+  `Ứng dụng Occo cung cấp dịch vụ kết nối người dùng qua các nền tảng trực tuyến. `,
+  `Occo cho phép người dùng tạo tài khoản và kết nối với các thành viên khác, nhằm mục đích tìm kiếm mối quan hệ xã hội có thể là tương tác hoặc giải trí. Occo cung cấp các tính năng như tạo hồ sơ cá nhân, nhắn tin, và các công cụ để tương tác và giao tiếp giữa các thành viên. Occo cũng đưa ra các chính sách bảo mật, an toàn và điều khoản sử dụng để bảo 
+  vệ quyền lợi và đảm bảo an toàn cho người dùng khi sử dụng dịch vụ.`,
     "Hãy tải ứng dụng, đăng ký & trải nghiệm ngay hôm nay!",
   ],
   card: [

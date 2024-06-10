@@ -45,10 +45,10 @@ export default function Navbar() {
               </span>
             </div>
             <div className="flex lg:hidden flex-row gap-5 items-center   ">
-              <div className="h-[90px] flex items-center max-[375px]:hidden">
-                <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  ">
+              <div className="h-[90px] w-full  flex items-center max-[205px]:hidden">
+                <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  w-full min-w-[110px] h-[36px] ">
                   <span
-                    className="flex w-full bg-navCor text-white rounded-full p-2 px-5"
+                    className="flex w-full justify-center bg-navCor text-white rounded-full p-2 px-5"
                     style={{
                       backgroundImage:
                         pathname == "/upgrade"
@@ -56,7 +56,7 @@ export default function Navbar() {
                           : "",
                     }}
                   >
-                    <Link href={ROUTES.PAGE.UPGRADE} className="text-[18px] max-lg:text-[16px]"> Nâng cấp VIP</Link>
+                    <Link href={ROUTES.PAGE.UPGRADE} className="text-[16px] max-lg:text-[10px]"> Nâng cấp VIP</Link>
                   </span>
                 </button>
               </div>

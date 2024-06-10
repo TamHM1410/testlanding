@@ -31,7 +31,7 @@ export default function NavOption() {
   return (
     <>
       <div
-        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[80px]"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-fit"
         style={{
           color: active == 0 ? "white" : "",
           backgroundImage:
@@ -46,7 +46,7 @@ export default function NavOption() {
       </div>
 
       <div
-        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[80px]"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-fit"
         style={{
           color: active == 1 ? "white" : "",
           backgroundImage:
@@ -61,7 +61,7 @@ export default function NavOption() {
       </div>
 
       <div
-        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[190px]"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-fit"
         style={{
           color: active == 3 ? "white" : "",
           backgroundImage:
@@ -76,7 +76,7 @@ export default function NavOption() {
       </div>
 
       <div
-        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-[190px]"
+        className=" h-[90px] flex items-center px-2   border-0 max-[1300px]:w-fit"
         style={{
           color: active == 4 ? "white" : "",
           backgroundImage:
@@ -92,7 +92,7 @@ export default function NavOption() {
 
     
 
-      <div className="h-[90px] flex items-center">
+      <div className="h-[90px] flex items-center min-w-[154px]">
         <button className="bg-gradient-to-r from-p_1 to-p_2 text-white font-semibold rounded-full p-[1.5px]  " >
           <span className="flex w-full bg-navCor text-white rounded-full p-2 px-5"  style={{
          
@@ -102,7 +102,7 @@ export default function NavOption() {
              : "",
             
        }}>
-           <Link href={ROUTES.PAGE.UPGRADE} className="text-[18px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center">  Nâng cấp VIP</Link>
+           <Link href={ROUTES.PAGE.UPGRADE} className="text-[16px] max-[110px]:text-[12px]  max-[1300px]:text-[12px] text-center">  Nâng cấp VIP</Link>
           </span>
         </button>
       </div>

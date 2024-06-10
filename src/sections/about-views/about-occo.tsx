@@ -15,7 +15,7 @@ export default function AboutOcco() {
 
             </div>
           </div>
-          <div className=" h-[400px] pt-5 text-white text-left gap-y-[20]  max-lg:text-center max-sm:h-full ">
+          <div className="h-full min-h-[400px] pt-5 text-white text-left gap-y-[20]  max-lg:text-center max-sm:h-full ">
             <div className="font-bold text-[40px] max-lg:text-center max-sm:text-[22px]">
               {Content.aboutContent.aboutOcco}
             </div>

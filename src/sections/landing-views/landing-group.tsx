@@ -13,6 +13,7 @@ import user from "../../../public/asset/images/user.png";
 import heart from "../../../public/asset/images/heart.png";
 import reta from "../../../public/asset/images/solar_widget-2-bold.png";
 import location from "../../../public/asset/images/location.png";
+import HomeSwiper from "@/components/swiper/Home-swiper";
 
 import { Content } from "@/utils";
 
@@ -43,161 +44,18 @@ export default function LandingGroup() {
   return (
     <>
       {/* { mobile screen} */}
+     
       <div className=" max-h-max	2xl:text-2xl  pt-10 px-10 text-white flex justify-center items-center md:hidden flex-col min-w-screen  max-w-[1440px] overflow-x-scroll no-scrollbar">
-        <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:h-[332px] max-sm:h-[332px] bg-customPurple  border-2 border-purple-800 rounded-full	flex items-center justify-center shadow  shadow-customPurple ">
-          <div
-            className="  rounded-box  w-[204px]"
-            onScroll={(event) => handleScroll(event)}
-          >
-            <div className="carousel-item w-full  flex flex-col">
-              <Image
-               
-                src={phone}
-                alt=""
-                className="w-full h-full "
-                key={0}
-                quality={100}
-              />
-            </div>
-          </div>
+      <div className=" max-sm:w-[322px] max-md:w-[332px] max-md:max-h-[332px] max-sm:max-h-[332px]	flex items-center justify-center    h-full">
+         
+
+          <Image src={group_1} alt="" height={302} width={401}/>
         </div>
 
-        <div className=" pt-5 mt-10 flex flex-col  ">
-          <div className="mx-[5%]">
-            <div
-              className="carousel w-full "
-              onScroll={(event) => handleScroll(event)}
-              ref={divRef}
-            >
-              <div
-                className="carousel-item flex flex-col  w-full"
-                ref={divRef2}
-              >
-                <div className=" flex  justify-center">
-                  <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={location} alt=""  width={17} height={17} quality={100}/>
-                  </div>
-                </div>
-                <div className="py-2 flex  justify-center text-[18px]">
-                  {Content.HomeContent.location}
-                </div>
-                <div
-                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
-                  style={{ color: "#817DA0" }}
-                >
-                  {Content.HomeContent.location_des}
-                </div>
-              </div>
-              <div className="carousel-item flex flex-col  w-full">
-                <div className=" flex  justify-center">
-                  <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={heart} alt=""  width={17} height={17} quality={100}/>
-                  </div>
-                </div>
-                <div className="py-2 flex  justify-center text-[18px]">Nhắn tin</div>
-                <div
-                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
-                  style={{ color: "#817DA0" }}
-                >
-                  Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi
-                  cảm thấy hợp gout nhé!
-                </div>
-              </div>
-              <div className="carousel-item flex flex-col  w-full">
-                <div className=" flex  justify-center">
-                  <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={reta} alt="" width={17} height={17} quality={100}/>
-                  </div>
-                </div>
-                <div className="py-2 flex  justify-center text-[18px]">Độ tương hợp</div>
-                <div
-                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
-                  style={{ color: "#817DA0" }}
-                >
-                  Đừng bỏ lỡ cơ hội trò chuyện. Hãy nhắn tin với người ấy khi
-                  cảm thấy hợp gout nhé!
-                </div>
-              </div>
-              <div className="carousel-item flex flex-col  w-full">
-                <div className=" flex  justify-center">
-                  <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">
-                    <Image src={user} alt="" width={17} height={17} quality={100}/>
-                  </div>
-                </div>
-                <div className="py-2 flex  justify-center text-[18px]">
-                  Chi tiết profile
-                </div>
-                <div
-                  className=" flex  justify-center text-sm w-full text-center text-[14px]"
-                  style={{ color: "#817DA0" }}
-                >
-                  Nếu muốn biết thêm về đối phương, lướt lên để xem trang cá
-                  nhân.
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="asdjaksdj">
-            <div className="flex justify-center mt-2 carousel">
-              <span className="mx-5 gap-1 flex flex-row w-[38px] h-[6px] justify-center">
-                <div
-                  className="h-full duration-100   rounded "
-                  onClick={() => setCurrentItem(0)}
-                  style={{
-                    backgroundColor:
-                      scrollPosition <= divWidth - 1 ? "#A11BC7" : "#1D1E3C",
-                    width: scrollPosition === 0 ? 20 : 12,
-                  }}
-                ></div>
-                <div
-                  className="h-full duration-100 rounded"
-                  onClick={() => setCurrentItem(1)}
-                  style={{
-                    backgroundColor:
-                      scrollPosition > divWidth - 1 &&
-                      scrollPosition <= (divWidth - 1) * 2
-                        ? "#A11BC7"
-                        : "#1D1E3C",
-                    width:
-                      scrollPosition > divWidth - 1 &&
-                      scrollPosition <= (divWidth - 1) * 2
-                        ? 24
-                        : 12,
-                  }}
-                ></div>
-                <div
-                  className="h-full duration-100  rounded"
-                  onClick={() => setCurrentItem(2)}
-                  style={{
-                    backgroundColor:
-                      scrollPosition > (divWidth - 1) * 2 &&
-                      scrollPosition <= (divWidth - 1) * 3
-                        ? "#A11BC7"
-                        : "#1D1E3C",
-                    width:
-                      scrollPosition > (divWidth - 1) * 2 &&
-                      scrollPosition <= (divWidth - 1) * 3
-                        ? 24
-                        : 12,
-                  }}
-                ></div>
-                <div
-                  className="h-full duration-100  rounded"
-                  onClick={() => setCurrentItem(3)}
-                  style={{
-                    backgroundColor:
-                      scrollPosition > (divWidth - 1) * 3
-                        ? "#A11BC7"
-                        : "#1D1E3C",
-                    width: scrollPosition > (divWidth - 1) * 3 ? 24 : 12,
-                  }}
-                ></div>
-              </span>
-            </div>
-          </div>
-        </div>
+       
       </div>
+      <HomeSwiper/>
 
       <div className="min-w-screen max-w-screen pb-5 flex justify-center ">
         <div className="  grid grid-cols-3 max-lg:grid-cols-2  h-[657px] max-sm:hidden max-md:hidden max-w-[1440px]  max-[500px]:px-5 min-[500px]:px-[80px] ">

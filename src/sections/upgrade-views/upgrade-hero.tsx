@@ -12,7 +12,7 @@ export default function UPgradeHero() {
             </div>
             <div className="flex justify-center">
             <div
-              className="flex lg:pt-5 lg:flex-col max-lg:justify-center max-lg:text-center lg:text-left flex-col gap-y-5 max-lg:bg-gradient-to-b from-black  to-navCor  rounded-2xl h-auto max-sm:h-[263px] max-sm:w-[352px] max-lg:px-5"
+              className="flex lg:pt-5 lg:flex-col max-lg:justify-center max-lg:text-center lg:text-left flex-col gap-y-5 max-lg:bg-gradient-to-b from-[#0000006e]  to-navCor  rounded-2xl h-auto max-sm:h-[263px] max-sm:w-[352px] max-lg:px-5"
             
             >
               
@@ -30,7 +30,7 @@ export default function UPgradeHero() {
 
              
               <div
-                className="text-2xl font-bold lg:hidden lg:text-[40px] max-sm:text-[22px]"
+                className="text-2xl font-bold lg:hidden lg:text-[40px] max-sm:text-[22px] pt-10"
                 
               >
                 <div>{Content.upgrade.title_a}</div>
@@ -38,7 +38,7 @@ export default function UPgradeHero() {
               </div>
 
               <div
-                className="text-customGrey lg:hidden lg:text-[18px] max-sm:text-[14px] text-[18px] "
+                className="text-customGrey lg:hidden lg:text-[18px] max-sm:text-[14px] text-[18px] pb-10"
               >
                 {Content.upgrade.des}
               </div>
