@@ -8,25 +8,42 @@ export default function Footer() {
       <div className="flex justify-center text-white pb-5">
         <div className="px-5  flex flex-row max-[1180px]:flex-col max-[800px]:gap-y-3 justify-around max-w-[1440px] w-full max-lg:px-5 min-[500px]:px-[80px] ">
           <div className="w-full max-w-[180px] h-[36px] flex items-center gap-2 text-[16px] underline underline-offset-3">
-            <span>
-              <Image src={mail} alt="" width={30} height={24} quality={100} />
+            <span >
+              <Image src={mail} alt="" width={30} height={30} quality={100}      className="h-[30px] w-[30px] min-w-[30px]"/>
             </span>
             support@occo.vn
           </div>
-          <div className=" max-w-[180px]w-[180px]  h-[36px] flex items-center gap-2 text-[16px] ">
-            <span>
+          <div className=" w-fit min-w-[180px]  h-[36px] flex items-center gap-2 text-[16px] ">
+            <span className="">
               <Image
                 src={iconPhone}
                 alt=""
                 width={30}
                 height={30}
                 quality={100}
+                     className="h-[30px] w-[30px] min-w-[30px]"
               />
             </span>
             0399961368
           </div>
-          <div className="w-full max-w-[607px] flex items-center  h-[36px] max-sm:h-auto gap-2 text-[16px]">
-            <span>
+          <div className=" w-fit  flex items-center gap-2 text-[16px] ">
+            <span className="">
+              <Image
+                src={location}
+                alt=""
+                width={30}
+                height={30}
+                quality={100}
+                className="h-[30px] w-[30px] min-w-[30px]"
+              />
+            </span>
+            <div className="h-full max-h-[40px] flex items-center">
+            Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, Tỉnh Long An, Việt
+            Nam
+            </div>
+          </div>
+          {/* <div className="w-full  flex items-center  h-[36px] max-sm:h-auto  text-[16px]">
+            <span className="w-[40px] h-full flex items-center">
               <Image
                 src={location}
                 alt=""
@@ -37,7 +54,7 @@ export default function Footer() {
             </span>
             Số 838, Ấp Vĩnh Bình, Xã An Vĩnh Ngãi, Tp Tân An, Tỉnh Long An, Việt
             Nam
-          </div>
+          </div> */}
         </div>
       </div>
     </>
