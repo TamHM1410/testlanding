@@ -82,11 +82,11 @@ export default function HomeSwiper() {
 
           }}
       >
-        {slideOption &&
+        {
           slideOption.map((item, index) => {
             return (
               <>
-                <SwiperSlide className="max-[500px]:px-5 min-[500px]:px-[80px]">
+                <SwiperSlide className="max-[500px]:px-5 min-[500px]:px-[80px]" key={item.name}>
                   <div className=" flex flex-col  w-full items-center">
                     <div className=" flex  justify-center">
                       <div className=" h-[34px] w-[34px] rounded bg-purple-700 flex items-center justify-center">

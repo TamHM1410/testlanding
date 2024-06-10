@@ -58,13 +58,11 @@ export default function AboutSwiper(){
 
           }}
       >
-        {
-
-        }
+       
        
         {Content.aboutContent.card.map((item, index) => {
               return (
-                <SwiperSlide className="flex">
+                <SwiperSlide className="flex"  key={index}>
                   <div className="w-full flex justify-center">
                   <div
                     className="flex justify-center w-[310px] h-[353px]    flex-col gap-y-5 rounded-2xl carousel-item mx-2"
